@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Radius Previewer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            <h1 class="title">Border-Radius Previewer</h1>
+            <div class="box"></div>
+            
+            <div class="inputs">
+                <label for="property">Type Border Radius:</label>
+                <input id="property" type="text" placeholder="0">
+                <br>
+            </div>
+            <p>You can enter a different value for each side, just remember to always put the unit after each value (for example: 10px, 10rem...)</p><br>
+            <p>The values ​​will always be in the default direction (top, right, bottom, left), you can also enter just two values, for top and bottom, left and right</p>
+        </div>
+
+        <div class="right">
+            <div class="clipboard">
+                <textarea 
+                id="clipboard" 
+                readonly 
+                placeholder="element {
+        border-radius: 0px;
+    }"></textarea>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
